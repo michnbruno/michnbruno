@@ -11,9 +11,9 @@ Currently heads-down on Azure AI services and modern frontend.
 
 | Repository | What it is |
 |---|---|
-| <a href="https://michnbruno.github.io/michnbruno/#v-ai" rel="noopener noreferrer">ai-showcase-spa ↗</a> | Seven Azure AI PaaS services demonstrated against a .NET 8 API |
+<!--| <a href="https://michnbruno.github.io/michnbruno/#v-ai" rel="noopener noreferrer">ai-showcase-spa ↗</a> | Seven Azure AI PaaS services demonstrated against a .NET 8 API |
 | <a href="https://michnbruno.github.io/michnbruno/#v-order" rel="noopener noreferrer">async-order-processing ↗</a> | React front end · Azure-backed async event pipeline |
-| <a href="https://mbruno-projects.com" rel="noopener noreferrer">Portfolio ↗</a> | Everything else |
+| <a href="https://mbruno-projects.com" rel="noopener noreferrer">Portfolio ↗</a> | Everything else | -->
 
 ---
 

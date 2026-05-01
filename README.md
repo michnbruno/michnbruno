@@ -23,4 +23,6 @@ Currently heads-down on Azure AI services and modern frontend.
 - Building out this GitHub presence — more repos and write-ups on the way
 -->
 
+
+
 *Columbus, OH &nbsp;·&nbsp; Open to development / architecting roles &nbsp;·&nbsp; Hybrid or remote*

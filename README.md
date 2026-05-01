@@ -7,12 +7,13 @@ Currently heads-down on Azure AI services and modern frontend.
 
 ---
 
-### Live demos
+### Featured repositories
 
-| Project | What it is |
+| Repository | What it is |
 |---|---|
-| <a href="https://ai-demo.mbruno-projects.com" target="_blank" rel="noopener noreferrer">Azure AI Demos ↗</a> | Seven Azure AI PaaS services demonstrated against a .NET 8 API |
-| <a href="https://mbruno-projects.com" target="_blank" rel="noopener noreferrer">Portfolio ↗</a> | Everything else |
+| <a href="https://michnbruno.github.io/michnbruno/#v-ai" rel="noopener noreferrer">ai-showcase-spa ↗</a> | Seven Azure AI PaaS services demonstrated against a .NET 8 API |
+| <a href="https://michnbruno.github.io/michnbruno/#v-order" rel="noopener noreferrer">async-order-processing ↗</a> | React front end · Azure-backed async event pipeline |
+| <a href="https://mbruno-projects.com" rel="noopener noreferrer">Portfolio ↗</a> | Everything else |
 
 ---
 
@@ -23,6 +24,6 @@ Currently heads-down on Azure AI services and modern frontend.
 - Building out this GitHub presence — more repos and write-ups on the way
 -->
 
-
+---
 
 *Columbus, OH &nbsp;·&nbsp; Open to development / architecting roles &nbsp;·&nbsp; Hybrid or remote*

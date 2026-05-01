@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Michael Bruno · michnbruno</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0;}
+    :root{
+      --bg:#ffffff;--surface:#f6f8fa;--border:#d0d7de;--border2:#afb8c1;
+      --text:#1f2328;--muted:#656d76;--link:#0969da;--success:#1a7f37;--warn:#9a6700;
+      --sans:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif;
+      --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,monospace;
+    }
+    body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:16px;line-height:1.6;}
+
+    .wrap{max-width:1012px;margin:0 auto;padding:32px 24px;}
+
+    .view{display:none;animation:fadeIn 0.15s ease;}
+    .view.active{display:block;}
+    @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+
+    /* header */
+    .hub-eyebrow{font-family:var(--mono);font-size:12px;color:var(--muted);margin-bottom:6px;}
+    .hub-name{font-size:28px;font-weight:600;color:var(--text);margin-bottom:4px;letter-spacing:-0.01em;}
+    .hub-sub{font-family:var(--mono);font-size:13px;color:var(--muted);}
+    .hub-header{padding-bottom:24px;margin-bottom:28px;border-bottom:1px solid var(--border);}
+
+    /* groups */
+    .group{margin-bottom:28px;}
+    .group-label{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:12px;color:var(--muted);margin-bottom:12px;}
+    .group-label::after{content:'';flex:1;height:1px;background:var(--border);}
+    .dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;}
+
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;}
+
+    /* active cards */
+    .card{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:16px;cursor:pointer;transition:border-color 0.1s,box-shadow 0.1s;position:relative;overflow:hidden;}
+    .card:hover{border-color:var(--border2);box-shadow:0 1px 3px rgba(31,35,40,0.12);}
+    .card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;opacity:0;transition:opacity 0.12s;}
+    .card:hover::before{opacity:1;}
+    .ca::before{background:#0969da;}.cn::before{background:#1a7f37;}
+    .cc::before{background:#8250df;}.cr::before{background:#0891b2;}
+    .cng::before{background:#c41230;}.ch::before{background:#9a6700;}
+
+    /* placeholder cards */
+    .card-ph{background:var(--surface);border:1px dashed var(--border);border-radius:6px;padding:16px;cursor:default;opacity:0.45;position:relative;overflow:hidden;}
+
+    .card-name{font-family:var(--mono);font-size:14px;font-weight:600;color:var(--link);margin-bottom:6px;}
+    .card-name-ph{font-family:var(--mono);font-size:14px;font-weight:600;color:var(--muted);margin-bottom:6px;}
+    .card-desc{font-size:14px;color:var(--muted);line-height:1.5;margin-bottom:12px;}
+    .card-footer{display:flex;gap:6px;align-items:center;flex-wrap:wrap;}
+    .card-arrow{margin-left:auto;color:var(--muted);opacity:0;transition:opacity 0.1s;font-size:14px;}
+    .card:hover .card-arrow{opacity:1;}
+    .ph-badge{font-family:var(--mono);font-size:11px;color:var(--muted);border:1px dashed var(--border2);border-radius:2em;padding:1px 8px;}
+
+    /* labels */
+    .lbl{font-family:var(--mono);font-size:12px;padding:2px 8px;border-radius:2em;border:1px solid;}
+    .l-live{color:#1a7f37;border-color:#1a7f3750;background:#dafbe1;}
+    .l-wip{color:#9a6700;border-color:#9a670050;background:#fff8c5;}
+    .l-soon{color:#8250df;border-color:#8250df50;background:#fbefff;}
+    .l-neu{color:var(--muted);border-color:var(--border);background:var(--bg);}
+
+    /* detail */
+    .back-btn{font-family:var(--mono);font-size:13px;color:var(--link);background:none;border:none;cursor:pointer;padding:0;margin-bottom:24px;display:inline-flex;align-items:center;gap:4px;}
+    .back-btn:hover{text-decoration:underline;}
+    .d-eyebrow{font-family:var(--mono);font-size:12px;color:var(--muted);margin-bottom:6px;}
+    .d-name{font-size:24px;font-weight:600;color:var(--text);margin-bottom:8px;letter-spacing:-0.01em;}
+    .d-desc{font-size:15px;color:var(--muted);line-height:1.6;margin-bottom:20px;max-width:620px;}
+    .btn-row{display:flex;gap:8px;flex-wrap:wrap;padding-bottom:24px;margin-bottom:24px;border-bottom:1px solid var(--border);}
+    .btn{font-family:var(--mono);font-size:13px;padding:6px 14px;border-radius:6px;border:1px solid var(--border);color:var(--text);text-decoration:none;background:var(--surface);cursor:pointer;display:inline-flex;align-items:center;gap:5px;font-weight:500;}
+    .btn:hover{background:#eaeef2;border-color:var(--border2);}
+    .btn-p{background:#1f2328;color:#fff;border-color:#1f2328;}
+    .btn-p:hover{background:#32383f;color:#fff;}
+    .sec-head{font-family:var(--mono);font-size:12px;color:var(--muted);letter-spacing:0.04em;margin-bottom:10px;margin-top:24px;}
+    .stack-row{display:flex;gap:6px;flex-wrap:wrap;}
+    .meta-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px;margin:20px 0;}
+    .meta-box{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:12px 16px;}
+    .meta-label{font-family:var(--mono);font-size:11px;color:var(--muted);margin-bottom:4px;letter-spacing:0.04em;}
+    .meta-val{font-size:14px;color:var(--text);font-weight:500;}
+    .tbl-wrap{border:1px solid var(--border);border-radius:6px;overflow:hidden;margin-top:10px;}
+    table{width:100%;border-collapse:collapse;}
+    thead{background:var(--bg);}
+    th{font-family:var(--mono);font-size:12px;color:var(--muted);text-align:left;padding:10px 16px;border-bottom:1px solid var(--border);font-weight:400;}
+    td{padding:10px 16px;border-bottom:1px solid var(--border);font-size:14px;color:var(--text);vertical-align:top;}
+    tr:last-child td{border-bottom:none;}
+    tr:hover td{background:var(--bg);}
+    .s-done{font-family:var(--mono);font-size:12px;color:var(--success);}
+    .s-wip{font-family:var(--mono);font-size:12px;color:var(--warn);}
+    .s-no{font-family:var(--mono);font-size:12px;color:var(--muted);}
+    .note{font-size:13px;color:var(--muted);}
+  </style>
+</head>
+<body>
+
+<!-- HUB -->
+<div class="view active" id="v-hub">
+<div class="wrap">
+  <div class="hub-header">
+    <div class="hub-eyebrow">michnbruno.github.io</div>
+    <div class="hub-name">Michael Bruno</div>
+    <div class="hub-sub">.NET · Azure · Angular · React · full stack</div>
+  </div>
+
+  <div class="group">
+    <div class="group-label"><span class="dot" style="background:#0969da"></span>AI demos</div>
+    <div class="grid">
+      <div class="card ca" onclick="show('v-ai')">
+        <div class="card-name">ai-showcase-spa</div>
+        <div class="card-desc">Seven Azure AI PaaS services against a .NET 8 API backend</div>
+        <div class="card-footer"><span class="lbl l-live">live</span><span class="lbl l-neu">.NET 8</span><span class="lbl l-neu">Azure AI</span><span class="card-arrow">→</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="group">
+    <div class="group-label"><span class="dot" style="background:#1a7f37"></span>.NET async / event-based</div>
+    <div class="grid">
+      <div class="card cn" onclick="show('v-order')">
+        <div class="card-name">async-order-processing</div>
+        <div class="card-desc">React front end · Azure async event pipeline</div>
+        <div class="card-footer"><span class="lbl l-wip">backend wip</span><span class="lbl l-neu">Azure</span><span class="card-arrow">→</span></div>
+      </div>
+      <div class="card-ph">
+        <div class="card-name-ph">breakfast-demo</div>
+        <div class="card-desc">Sync / async / fire-and-forget via a breakfast workflow</div>
+        <div class="card-footer"><span class="ph-badge">placeholder</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="group">
+    <div class="group-label"><span class="dot" style="background:#8250df"></span>C4 diagrams / architecture</div>
+    <div class="grid">
+      <div class="card-ph">
+        <div class="card-name-ph">architecture-diagrams</div>
+        <div class="card-desc">C4 model diagrams — context, container, component levels</div>
+        <div class="card-footer"><span class="ph-badge">placeholder</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="group">
+    <div class="group-label"><span class="dot" style="background:#0891b2"></span>React SPAs</div>
+    <div class="grid">
+      <div class="card-ph">
+        <div class="card-name-ph">breakfast-spa</div>
+        <div class="card-desc">Real-time WebPubSub event stream front end</div>
+        <div class="card-footer"><span class="ph-badge">placeholder</span></div>
+      </div>
+      <div class="card-ph">
+        <div class="card-name-ph">order-demo-spa</div>
+        <div class="card-desc">Pipeline stage visualization front end</div>
+        <div class="card-footer"><span class="ph-badge">placeholder</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="group">
+    <div class="group-label"><span class="dot" style="background:#c41230"></span>Angular SPAs</div>
+    <div class="grid">
+      <div class="card-ph">
+        <div class="card-name-ph">dotnet-gen-crud-spa</div>
+        <div class="card-desc">Angular 18 SPA · generic .NET 8 CRUD API</div>
+        <div class="card-footer"><span class="ph-badge">placeholder</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="group">
+    <div class="group-label"><span class="dot" style="background:#9a6700"></span>HTML / CSS sites</div>
+    <div class="grid">
+      <div class="card-ph">
+        <div class="card-name-ph">juggling-site-mad</div>
+        <div class="card-desc">World Gone Mad Juggling — performance site</div>
+        <div class="card-footer"><span class="ph-badge">placeholder</span></div>
+      </div>
+      <div class="card-ph">
+        <div class="card-name-ph">dotnet-concepts</div>
+        <div class="card-desc">Interactive .NET reference SPA</div>
+        <div class="card-footer"><span class="ph-badge">placeholder</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- DETAIL: AI Showcase -->
+<div class="view" id="v-ai">
+<div class="wrap">
+  <button class="back-btn" onclick="show('v-hub')">← back to michnbruno</button>
+  <div class="d-name">Azure AI Service Demos</div>
+  <div class="d-desc">A single-page application demonstrating seven Azure AI PaaS services against a .NET 8 Web API backend. Covers document intelligence, vision, language, speech, search, content safety, and OpenAI.</div>
+  <div class="btn-row">
+    <a class="btn btn-p" href="https://ai-demo.mbruno-projects.com" target="_blank">live demo ↗</a>
+    <a class="btn" href="https://github.com/michnbruno/ai-showcase-spa" target="_blank">spa repo ↗</a>
+    <a class="btn" href="https://github.com/michnbruno/ai-showcase-api" target="_blank">api repo ↗</a>
+  </div>
+
+  <div class="sec-head">STACK</div>
+  <div class="stack-row">
+    <span class="lbl l-neu">Vanilla JS</span>
+    <span class="lbl l-neu">.NET 8 Web API</span>
+    <span class="lbl l-neu">Azure App Service</span>
+    <span class="lbl l-neu">Azure Static Web Apps</span>
+    <span class="lbl l-neu">GitHub Actions CI/CD</span>
+  </div>
+
+  <div class="meta-grid">
+    <div class="meta-box"><div class="meta-label">STATUS</div><div class="meta-val" style="color:var(--success)">Live + deployed</div></div>
+    <div class="meta-box"><div class="meta-label">LAST UPDATED</div><div class="meta-val">April 2026</div></div>
+    <div class="meta-box"><div class="meta-label">API HOST</div><div class="meta-val">Azure App Service</div></div>
+    <div class="meta-box"><div class="meta-label">FRONTEND HOST</div><div class="meta-val">Azure Static Web App</div></div>
+  </div>
+
+  <div class="sec-head">FEATURE STATUS</div>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th style="width:34%">Service</th><th style="width:20%">Status</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr><td>Document Intelligence</td><td><span class="s-done">✔ implemented</span></td><td><span class="note">Form extraction, layout analysis</span></td></tr>
+        <tr><td>Azure OpenAI (gpt-4o-mini)</td><td><span class="s-done">✔ implemented</span></td><td><span class="note">Chat completion, prompt demos</span></td></tr>
+        <tr><td>AI Vision</td><td><span class="s-done">✔ implemented</span></td><td><span class="note">Image description, object detection</span></td></tr>
+        <tr><td>Language Service</td><td><span class="s-done">✔ implemented</span></td><td><span class="note">Sentiment, key phrase, entity recognition</span></td></tr>
+        <tr><td>Content Safety</td><td><span class="s-done">✔ implemented</span></td><td><span class="note">Text moderation categories</span></td></tr>
+        <tr><td>AI Search</td><td><span class="s-done">✔ implemented</span></td><td><span class="note">Semantic search index demo</span></td></tr>
+        <tr><td>Speech Service</td><td><span class="s-done">✔ implemented</span></td><td><span class="note">Text-to-speech output</span></td></tr>
+        <tr><td>Streaming responses</td><td><span class="s-wip">⚠ partial</span></td><td><span class="note">OpenAI streaming not yet wired to UI</span></td></tr>
+        <tr><td>Azure AI Foundry</td><td><span class="s-no">— not implemented</span></td><td><span class="note">Platform awareness only at this stage</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+</div>
+
+<!-- DETAIL: Async Order -->
+<div class="view" id="v-order">
+<div class="wrap">
+  <button class="back-btn" onclick="show('v-hub')">← back to michnbruno</button>
+  <div class="d-name">Async Order Processing</div>
+  <div class="d-desc">End-to-end demonstration of async event-driven order processing. React front end submits orders and watches pipeline stages fire in real time. Backend uses Azure Functions and Storage Queues with Web PubSub for live event streaming.</div>
+  <div class="btn-row">
+    <a class="btn btn-p" href="https://demos.mbruno-projects.com/order" target="_blank">frontend preview ↗</a>
+    <a class="btn" href="https://github.com/michnbruno" target="_blank">repo ↗</a>
+  </div>
+
+  <div class="sec-head">STACK</div>
+  <div class="stack-row">
+    <span class="lbl l-neu">React</span>
+    <span class="lbl l-neu">.NET 8</span>
+    <span class="lbl l-neu">Azure Functions</span>
+    <span class="lbl l-neu">Storage Queues</span>
+    <span class="lbl l-neu">Web PubSub</span>
+  </div>
+
+  <div class="meta-grid">
+    <div class="meta-box"><div class="meta-label">FRONTEND</div><div class="meta-val" style="color:var(--success)">Live preview</div></div>
+    <div class="meta-box"><div class="meta-label">BACKEND</div><div class="meta-val" style="color:var(--warn)">In development</div></div>
+    <div class="meta-box"><div class="meta-label">PIPELINE</div><div class="meta-val">Simulated client-side</div></div>
+    <div class="meta-box"><div class="meta-label">LIVE EVENTS</div><div class="meta-val">Web PubSub — in progress</div></div>
+  </div>
+
+  <div class="sec-head">FEATURE STATUS</div>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th style="width:34%">Feature</th><th style="width:20%">Status</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr><td>Order submission form</td><td><span class="s-done">✔ implemented</span></td><td><span class="note">Customer, product, qty, priority</span></td></tr>
+        <tr><td>Pipeline stage visualization</td><td><span class="s-done">✔ implemented</span></td><td><span class="note">7 stages, animated progression</span></td></tr>
+        <tr><td>Frontend simulation mode</td><td><span class="s-done">✔ implemented</span></td><td><span class="note">Stages fire client-side for demo</span></td></tr>
+        <tr><td>Azure Functions backend</td><td><span class="s-wip">⚠ in progress</span></td><td><span class="note">Queue trigger functions scaffolded</span></td></tr>
+        <tr><td>Storage Queue integration</td><td><span class="s-wip">⚠ in progress</span></td><td><span class="note">Queue per pipeline stage</span></td></tr>
+        <tr><td>Live WebPubSub stream</td><td><span class="s-no">— not yet</span></td><td><span class="note">Wired once backend lands</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+</div>
+
+<script>
+  function show(id){
+    document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    window.location.hash = id;
+    window.scrollTo(0,0);
+  }
+  // deep link on load
+  window.addEventListener('DOMContentLoaded', function(){
+    var hash = window.location.hash.replace('#','');
+    if(hash && document.getElementById(hash)){
+      show(hash);
+    }
+  });
+</script>
+</body>
+</html>

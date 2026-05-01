@@ -11,10 +11,10 @@ Currently heads-down on Azure AI services and modern frontend.
 
 | Project | What it is |
 |---|---|
-| [Azure AI Showcase](https://ai-demo.mbruno-projects.com) | Seven Azure AI PaaS services demonstrated against a .NET 8 API |
-| [React + Web PubSub](https://react.mbruno-projects.com) | Real-time event streaming — sync, async, and fire-and-forget modes |
-| [Async Order Processing](https://demos.mbruno-projects.com/order) | React front end · Azure-backed async event pipeline |
-| [Portfolio](https://mbruno-projects.com) | Everything else |
+| <a href="https://ai-demo.mbruno-projects.com" target="_blank" rel="noopener noreferrer">Azure AI Showcase ↗</a> | Seven Azure AI PaaS services demonstrated against a .NET 8 API |
+| <a href="https://react.mbruno-projects.com" target="_blank" rel="noopener noreferrer">React + Web PubSub ↗</a> | Real-time event streaming — sync, async, and fire-and-forget modes |
+| <a href="https://demos.mbruno-projects.com/order" target="_blank" rel="noopener noreferrer">Async Order Processing ↗</a> | React front end · Azure-backed async event pipeline |
+| <a href="https://mbruno-projects.com" target="_blank" rel="noopener noreferrer">Portfolio ↗</a> | Everything else |
 
 ---
 

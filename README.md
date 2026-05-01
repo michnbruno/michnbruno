@@ -4,9 +4,9 @@ Full stack developer and architect. Enterprise and line-of-business applications
 Currently heads-down on Azure AI services and modern frontend.
 
 **Core stack:** .NET / C# &nbsp;·&nbsp; Azure PaaS &nbsp;·&nbsp; SQL Server &nbsp;·&nbsp; Angular &nbsp;·&nbsp; React
-
----
 <!--
+---
+
 ### Featured repositories
 
 | Repository | What it is |

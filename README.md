@@ -12,7 +12,7 @@ Full stack developer and architect. Currently heads-down on Azure AI services an
 |---|---|---|
 | **AI Demos** | | |
 | [ai-showcase-spa ↗](https://github.com/michnbruno/ai-showcase-spa) | Azure AI PaaS services against a .NET 8 API | [ai-demo.mbruno-projects.com](https://ai-demo.mbruno-projects.com) |
-| --- | ---  | --- |
+| --- | &nbsp;  | &nbsp; |
 | **\.NET / async** | | |
 | [async-order-processing ↗](https://github.com/michnbruno/demos-spa) | React front end · Azure async event pipeline | [demos.mbruno-projects.com/order](https://demos.mbruno-projects.com/order) |
 | [dotnet-apis-jwt-and-angular ↗](https://github.com/michnbruno/dotnet-apis-jwt-and-angular) | JWT token service · Angular consumer · .NET 8 | n/a |

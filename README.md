@@ -11,7 +11,7 @@ Full stack developer and architect. Currently heads-down on Azure AI services an
 | Featured Repositories | Description | URL |
 |---|---|---|
 | **Azure AI Services** | | |
-| [ai-showcase-spa ](https://github.com/michnbruno/ai-showcase-spa) | Demo-UI Azure AI PaaS services against a .NET 8 API | [ai-demo.mbruno-projects.com ↗](https://ai-demo.mbruno-projects.com) |
+| [ai-showcase-spa ](https://github.com/michnbruno/ai-showcase-spa) | Demo-UI Azure AI PaaS services against a .NET 8 API | [Live UI Demo↗](https://ai-demo.mbruno-projects.com) |
 | [ai-showcase-api ](https://github.com/michnbruno/ai-showcase-api) | Swagger-API PaaS services in .NET 8 API | [Swagger API ↗](https://aishowcase-api-6lzz2tc7kf3gw.azurewebsites.net/swagger/index.html) |
 | &nbsp;  | &nbsp;  | &nbsp; |
 | **Backend/\.NET/Cloud Async Events** | | |
@@ -20,10 +20,10 @@ Full stack developer and architect. Currently heads-down on Azure AI services an
 | [dotnet-gen-crud-spa ](https://github.com/michnbruno/dotnet-gen-crud-spa) | .NET 8 Generic CRUD API · Angular 18 SPA | [Swagger API ↗](https://app-generic-crud.azurewebsites.net/swagger/index.html) |
 | &nbsp; |  &nbsp;  |  &nbsp; |
 | **Frontend/SPAs/HTML/CSS** | | |
-| [breakfast-spa ](https://github.com/michnbruno/breakfast-spa) |React SPA-Web Pub Sub Breakfast Order | [https://demos.mbruno-projects.com/order ↗](https://demos.mbruno-projects.com/) |
-| [async-order-processing ](https://github.com/michnbruno/demos-spa) | React SPA-Azure async event pipeline | [demos.mbruno-projects.com/order ↗](https://demos.mbruno-projects.com/order) |
-| [dotnet-concepts ](https://github.com/michnbruno/dotnet-concepts) | Interactive .NET reference | [michnbruno.github.io/dotnet-concepts ↗](https://michnbruno.github.io/dotnet-concepts) |
-| [juggling-site-mad ](https://github.com/michnbruno/juggling-site-mad) | CTA World Gone Mad Juggling — performance site | [https://demos.mbruno-projects.com/order ↗](https://juggle.mbruno-projects.com/order) |
+| [breakfast-spa ](https://github.com/michnbruno/breakfast-spa) |React SPA-Web Pub Sub Breakfast Order | [Live UI Demo↗](https://demos.mbruno-projects.com/) |
+| [async-order-processing ](https://github.com/michnbruno/demos-spa) | React SPA-Azure async event pipeline | [Live UI Demo↗](https://demos.mbruno-projects.com/order) |
+| [dotnet-concepts ](https://github.com/michnbruno/dotnet-concepts) | Interactive .NET reference | [Live UI Demo↗](https://michnbruno.github.io/dotnet-concepts) |
+| [juggling-site-mad ](https://github.com/michnbruno/juggling-site-mad) | CTA World Gone Mad Juggling — performance site | [Live UI Demo↗](https://juggle.mbruno-projects.com/order) |
 | &nbsp; | | |
 <!--
 | **Portfolio** | | |

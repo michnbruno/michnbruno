@@ -1,8 +1,8 @@
 # Michael Bruno · michnbruno
 
-Full stack developer and architect. Currently heads-down on Azure AI services and AI Assisted Development workflows.
+Full stack developer and architect. Currently heads-down on Azure AI services and AI Assisted Development workflows. &nbsp;·&nbsp;  [mbruno-projects.com](https://mbruno-projects.com)
 
-**Core stack:** .NET / C# &nbsp;·&nbsp; Azure PaaS &nbsp;·&nbsp; SQL Server &nbsp;·&nbsp; Angular &nbsp;·&nbsp; React
+**Core stack:** .NET / C# &nbsp;·&nbsp; Azure PaaS &nbsp;·&nbsp; SQL Server &nbsp;·&nbsp; Angular &nbsp;·&nbsp; React  
 
 ---
 
@@ -24,9 +24,10 @@ Full stack developer and architect. Currently heads-down on Azure AI services an
 | [dotnet-concepts ](https://github.com/michnbruno/dotnet-concepts) | Interactive .NET reference SPA · GitHub Pages | [michnbruno.github.io/dotnet-concepts](https://michnbruno.github.io/dotnet-concepts) |
 | [juggling-site-mad ](https://github.com/michnbruno/juggling-site-mad) | World Gone Mad Juggling — performance site | n/a |
 | &nbsp; | | |
+<!--
 | **Portfolio** | | |
 | [mbruno-projects.com ](https://mbruno-projects.com) | Everything else | [mbruno-projects.com](https://mbruno-projects.com) |
 
-<!--
+
 *Columbus, OH &nbsp;·&nbsp; Open to development / architecting roles &nbsp;·&nbsp; Hybrid or remote*
 -->

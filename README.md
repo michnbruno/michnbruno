@@ -13,12 +13,12 @@ Full stack developer and architect. Currently heads-down on Azure AI services an
 | **AI Demos** | | |
 | [ai-showcase-spa ↗](https://github.com/michnbruno/ai-showcase-spa) | Azure AI PaaS services against a .NET 8 API | [ai-demo.mbruno-projects.com](https://ai-demo.mbruno-projects.com) |
 | --- | &nbsp;  | &nbsp; |
-| **Back end /.NET / Async Events** | | |
+| **Back end.NET/Async Events** | | |
 | [async-order-processing ↗](https://github.com/michnbruno/demos-spa) | React front end · Azure async event pipeline | [demos.mbruno-projects.com/order](https://demos.mbruno-projects.com/order) |
 | [dotnet-apis-jwt-and-angular ↗](https://github.com/michnbruno/dotnet-apis-jwt-and-angular) | JWT token service · Angular consumer · .NET 8 | n/a |
 | [dotnet-gen-crud-spa ↗](https://github.com/michnbruno/dotnet-gen-crud-spa) | Generic .NET 8 CRUD API · Angular 18 SPA | n/a |
 | &nbsp; | | |
-| **Front end / SPAs / HTML / CSS ** | | |
+| **Front end/SPAs/HTML/CSS** | | |
 | [dotnet-concepts ↗](https://github.com/michnbruno/dotnet-concepts) | Interactive .NET reference SPA · GitHub Pages | [michnbruno.github.io/dotnet-concepts](https://michnbruno.github.io/dotnet-concepts) |
 | [juggling-site-mad ↗](https://github.com/michnbruno/juggling-site-mad) | World Gone Mad Juggling — performance site | n/a |
 | &nbsp; | | |

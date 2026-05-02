@@ -6,9 +6,9 @@ Full stack developer and architect. Currently heads-down on Azure AI services an
 
 ---
 
-### Featured repositories
 
-| Repository | Description | URL |
+
+| Featured Repositories | Description | URL |
 |---|---|---|
 | **AI demos** | | |
 | [ai-showcase-spa ↗](https://github.com/michnbruno/ai-showcase-spa) | Seven Azure AI PaaS services against a .NET 8 API | [ai-demo.mbruno-projects.com](https://ai-demo.mbruno-projects.com) |

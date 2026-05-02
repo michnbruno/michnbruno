@@ -23,7 +23,7 @@ Full stack developer and architect. Currently heads-down on Azure AI services an
 | [breakfast-spa ](https://github.com/michnbruno/breakfast-spa) |React SPA-Web Pub Sub Breakfast Order | [Live UI Demo↗](https://demos.mbruno-projects.com/breakfast)) |
 | [async-order-processing ](https://github.com/michnbruno/demos-spa) | React SPA-Azure async event pipeline | [Live UI Demo↗](https://demos.mbruno-projects.com/order) |
 | [dotnet-concepts ](https://github.com/michnbruno/dotnet-concepts) | Interactive .NET reference | [Live UI Demo↗](https://michnbruno.github.io/dotnet-concepts) |
-| [juggling-site-mad ](https://github.com/michnbruno/juggling-site-mad) | CTA World Gone Mad Juggling — performance site | [Live UI Demo↗](https://juggling.mbruno-projects.com/order) |
+| [juggling-site-mad ](https://github.com/michnbruno/juggling-site-mad) | CTA World Gone Mad Juggling — performance site | [Live UI Demo↗](https://juggle.mbruno-projects.com) |
 | &nbsp; | | |
 <!--
 | **Portfolio** | | |

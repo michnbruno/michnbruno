@@ -18,7 +18,7 @@ Full stack developer and architect. Currently heads-down on Azure AI services an
 
 | [dotnet-apis-jwt-and-angular ](https://github.com/michnbruno/dotnet-apis-jwt-and-angular) | JWT token service · Angular consumer · .NET 8 | n/a |
 | [dotnet-gen-crud-spa ](https://github.com/michnbruno/dotnet-gen-crud-spa) | .NET 8 Generic CRUD API · Angular 18 SPA | n/a |
-| &nbsp; | | |
+| &nbsp; |  &nbsp;  |  &nbsp; |
 | **Front end/SPAs/HTML/CSS** | | |
 | [async-order-processing ](https://github.com/michnbruno/demos-spa) | Azure async event pipeline | [demos.mbruno-projects.com/order](https://demos.mbruno-projects.com/order) |
 | [dotnet-concepts ](https://github.com/michnbruno/dotnet-concepts) | Interactive .NET reference SPA · GitHub Pages | [michnbruno.github.io/dotnet-concepts](https://michnbruno.github.io/dotnet-concepts) |

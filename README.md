@@ -17,7 +17,6 @@ Full stack developer and architect. Currently heads-down on Azure AI services an
 | **Back end \.NET/Cloud Async Events** | | |
 
 | [dotnet-apis-jwt-and-angular ](https://github.com/michnbruno/dotnet-apis-jwt-and-angular) | JWT token service · Angular consumer · .NET 8 | n/a |
-| [breakfast-demo ](https://github.com/michnbruno/breakfast-demo) | Swagger-API Async Events Breakfast Prep .NET 8 | [Swagger API ↗](https://breakfast-demo-api-hnekdkgmfed6dxa7.eastus-01.azurewebsites.net/swagger/index.html) |
 | [dotnet-gen-crud-spa ](https://github.com/michnbruno/dotnet-gen-crud-spa) | .NET 8 Generic CRUD API · Angular 18 SPA | n/a |
 | &nbsp; | | |
 | **Front end/SPAs/HTML/CSS** | | |

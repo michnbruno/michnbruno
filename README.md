@@ -10,8 +10,8 @@ Full stack developer and architect. Currently heads-down on Azure AI services an
 
 | Featured Repositories | Description | URL |
 |---|---|---|
-| **AI demos** | | |
-| [ai-showcase-spa ↗](https://github.com/michnbruno/ai-showcase-spa) | Seven Azure AI PaaS services against a .NET 8 API | [ai-demo.mbruno-projects.com](https://ai-demo.mbruno-projects.com) |
+| **AI Demos** | | |
+| [ai-showcase-spa ↗](https://github.com/michnbruno/ai-showcase-spa) | Azure AI PaaS services against a .NET 8 API | [ai-demo.mbruno-projects.com](https://ai-demo.mbruno-projects.com) |
 | &nbsp; | | |
 | **\.NET / async** | | |
 | [async-order-processing ↗](https://github.com/michnbruno/demos-spa) | React front end · Azure async event pipeline | [demos.mbruno-projects.com/order](https://demos.mbruno-projects.com/order) |

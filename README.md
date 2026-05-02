@@ -10,11 +10,13 @@ Full stack developer and architect. Currently heads-down on Azure AI services an
 
 | Featured Repositories | Description | URL |
 |---|---|---|
-| **AI Demos** | | |
-| [ai-showcase-spa ↗](https://github.com/michnbruno/ai-showcase-spa) | Azure AI PaaS services against a .NET 8 API | [ai-demo.mbruno-projects.com](https://ai-demo.mbruno-projects.com) |
+| **Azure AI Services** | | |
+| [ai-showcase-spa ↗](https://github.com/michnbruno/ai-showcase-spa) | DEMO-UI Azure AI PaaS services against a .NET 8 API | [ai-demo.mbruno-projects.com](https://ai-demo.mbruno-projects.com) |
+| [ai-showcase-api ↗](https://github.com/michnbruno/ai-showcase-api) | Swagger-AI PaaS services in .NET 8 API | [ai-demo.mbruno-projects.com](https://ai-demo.mbruno-projects.com) |
 | --- | &nbsp;  | &nbsp; |
 | **Back end \.NET/Cloud Async Events** | | |
 | [async-order-processing ↗](https://github.com/michnbruno/demos-spa) | Azure async event pipeline | [demos.mbruno-projects.com/order](https://demos.mbruno-projects.com/order) |
+| [dotnet-apis-jwt-and-angular ↗](https://github.com/michnbruno/dotnet-apis-jwt-and-angular) | JWT token service · Angular consumer · .NET 8 | n/a |
 | [dotnet-apis-jwt-and-angular ↗](https://github.com/michnbruno/dotnet-apis-jwt-and-angular) | JWT token service · Angular consumer · .NET 8 | n/a |
 | [dotnet-gen-crud-spa ↗](https://github.com/michnbruno/dotnet-gen-crud-spa) | .NET 8 Generic CRUD API · Angular 18 SPA | n/a |
 | &nbsp; | | |

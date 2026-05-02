@@ -1,6 +1,6 @@
 # Michael Bruno · michnbruno
 
-Full stack developer and architect. Currently heads-down on Azure AI services and AI Assisted Development workflows. &nbsp;·&nbsp;  [mbruno-projects.com](https://mbruno-projects.com)
+Full stack developer and architect. Currently heads-down on Azure AI services and AI Assisted Development workflows.
 
 **Core stack:** .NET / C# &nbsp;·&nbsp; Azure PaaS &nbsp;·&nbsp; SQL Server &nbsp;·&nbsp; Angular &nbsp;·&nbsp; React  
 

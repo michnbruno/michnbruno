@@ -1,4 +1,4 @@
-# Michael Bruno · michnbruno
+# Michael Bruno 
 Full stack developer and architect. Current focus on AI Assisted Development/Workflows and Azure modernizations.
 
 **Core stack:** .NET / C# &nbsp;·&nbsp; Azure PaaS &nbsp;·&nbsp; SQL Server &nbsp;·&nbsp; Angular &nbsp;·&nbsp; React

@@ -1,10 +1,9 @@
-# Michael Bruno 
+# Michael Bruno
 Full stack developer and architect. Current focus on AI Assisted Development/Workflows and Azure modernizations.
 
 **Core stack:** .NET / C# &nbsp;·&nbsp; Azure PaaS &nbsp;·&nbsp; SQL Server &nbsp;·&nbsp; Angular &nbsp;·&nbsp; React
 
 ---
-
 | Featured Repositories | Description | URL |
 |---|---|---|
 | **Azure AI Services** | | |
@@ -21,11 +20,11 @@ Full stack developer and architect. Current focus on AI Assisted Development/Wor
 | [breakfast-spa](https://github.com/michnbruno/breakfast-spa) | React SPA · Web PubSub Breakfast Order | [Live UI Demo ↗](https://michnbruno.github.io/breakfast-spa) |
 | [async-order-processing](https://github.com/michnbruno/async-order-processing) | React SPA · Azure async event pipeline | [Live UI Demo ↗](https://michnbruno.github.io/async-order-processing) |
 | [dotnet-concepts](https://github.com/michnbruno/dotnet-concepts) | Interactive .NET reference | [Live UI Demo ↗](https://michnbruno.github.io/dotnet-concepts) |
+| [bounce-juggling-simulator](https://github.com/michnbruno/bounce-juggling-simulator) | Physics-based bounce juggling simulator | [Live UI Demo ↗](https://michnbruno.github.io/bounce-juggling-simulator) |
 | [juggling-site-mad](https://github.com/michnbruno/juggling-site-mad) | CTA World Gone Mad Juggling — performance site | [Live UI Demo ↗](https://juggle.mbruno-projects.com) |
 | &nbsp; | &nbsp; | &nbsp; |
 | **Portfolio** | | |
 | [mbruno-projects.com](https://mbruno-projects.com) | Everything else | [mbruno-projects.com ↗](https://mbruno-projects.com) |
-
 <!--
 *Columbus, OH &nbsp;·&nbsp; Open to development / architecting roles &nbsp;·&nbsp; Hybrid or remote*
 -->
